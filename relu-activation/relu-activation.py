@@ -5,6 +5,5 @@ def relu(x):
     Implement ReLU activation function.
     """
     # Write code here
-    x = np.asarray(x, dtype = float)
-    x = np.where(x > 0, x, 0)
-    return x
+    x = np.array(x)
+    return np.where(x > 0, x, 0)
